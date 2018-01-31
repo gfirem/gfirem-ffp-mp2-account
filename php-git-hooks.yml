@@ -10,9 +10,9 @@ pre-commit:
             symfony:    true
         options: "--fixers=short_array_syntax --diff"
     phpunit:
-        enabled:     true
+        enabled:     false
         random-mode: true
-        options:     '<some options>'
+        options:     null
         strict-coverage:
              enabled:       true
              minimum:       !!float 0
@@ -25,8 +25,8 @@ pre-commit:
         standard:    PSR2
         ignore:      '*/migrations/*'
     phpmd:
-        enabled:     true
-        options:     '<some options>'
+        enabled:     false
+        options:     null
     composer:        true
   message:
     right-message: 'HEY, GOOD JOB!!'
@@ -40,7 +40,7 @@ pre-push:
       phpunit:
         enabled:     true
         random-mode: true
-        options:     '<some options>'
+        options:     null
     strict-coverage:
         enabled:       true
         minimum:       90
