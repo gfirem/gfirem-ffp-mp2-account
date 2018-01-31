@@ -74,7 +74,7 @@ if ( ! class_exists( 'GFireMFfpMp2Account' ) ) {
 		 */
 		public function load_plugin_text_domain() {
 			load_plugin_textdomain( 'gfirem-ffp-m2-account-locale', false, basename( dirname( __FILE__ ) ) . '/languages' );
-		};
+		}
 
 		/**
 		 * Return an instance of this class.
