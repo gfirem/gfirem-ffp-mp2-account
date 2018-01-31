@@ -44,6 +44,7 @@ rm -rf ./vendor
 rm -rf ./tests
 #Scripts
 rm -rf ./*.sh
+rm -rf ./composer.lock
 
 if [ -f composer.json ]; then
     #Detect if there are composer dependencies
