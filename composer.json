@@ -1,0 +1,25 @@
+{
+    "name": "gfirem/gfirem-ffp-mp2-account",
+    "type": "wordpress-plugin",
+    "homepage": "http://www.gfirem.com",
+    "description": "Replace Profile Account section inside Membership Pro 2 with a Formidable Pro Form",
+    "license": "Apache License 2",
+    "authors": [
+        {
+            "name": "Guillermo Figueroa Mesa",
+            "email": "gfirem@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/johnbillion/query-monitor/issues",
+        "forum": "https://wordpress.org/support/plugin/query-monitor",
+        "source": "https://github.com/johnbillion/query-monitor"
+    },
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev" : {
+        "wimg/php-compatibility": "^8",
+        "wp-coding-standards/wpcs": "^0.13",
+        "phpunit/phpunit": "~5.7"
+    }
+}
