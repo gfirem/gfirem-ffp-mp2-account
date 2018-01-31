@@ -1,0 +1,53 @@
+pre-commit:
+    enabled: true
+    execute:
+        composer: false
+        jsonlint: false
+        phplint: true
+        phpmd:
+            enabled: true
+            options: null
+        phpcs:
+            enabled: false
+            standard: null
+            ignore: null
+        php-cs-fixer:
+            enabled: false
+            levels:
+                psr0: false
+                psr1: false
+                psr2: false
+                symfony: false
+            options: null
+        phpunit:
+            enabled: false
+            random-mode: false
+            options: null
+            strict-coverage:
+                enabled: false
+                minimum: null
+            guard-coverage:
+                enabled: false
+                message: null
+    message:
+        right-message: 'COMMIT IT!!'
+        error-message: 'YOU CAN NOT COMMIT CODE!!'
+commit-msg:
+    enabled: false
+    regular-expression: null
+pre-push:
+    enabled: true
+    execute:
+        phpunit:
+            enabled: false
+            random-mode: false
+            options: null
+            strict-coverage:
+                enabled: false
+                minimum: null
+            guard-coverage:
+                enabled: false
+                message: null
+    message:
+        right-message: 'PUSH IT!!'
+        error-message: 'YOU CAN NOT PUSH CODE!!'
