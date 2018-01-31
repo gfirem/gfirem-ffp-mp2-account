@@ -23,7 +23,6 @@ class GFireMFfpMp2AccountAccount {
 		$this->settings = get_option( GFireMFfpMp2AccountManager::get_slug() );
 		$hook           = 'ms_view_account_profile_top';
 
-		$s = get_current_screen();
 		if ( empty( $this->settings['form'] ) ) {
 			return;
 		}
