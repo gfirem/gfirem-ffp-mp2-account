@@ -64,7 +64,7 @@ if ( ! class_exists( 'GFireMFfpMp2Account' ) ) {
 			self::$js_url    = plugin_dir_url( __FILE__ ) . 'assets/js/';
 			self::$view_path = dirname( __FILE__ ) . '/view/';
 
-			$this->load_plugin_textdomain();
+			$this->load_plugin_text_domain();
 			require_once dirname( __FILE__ ) . '/classes/class-gfirem-ffp-mp2-account-manager.php';
 			new GFireMFfpMp2AccountManager();
 		}
@@ -72,7 +72,7 @@ if ( ! class_exists( 'GFireMFfpMp2Account' ) ) {
 		/**
 		 * Load the plugin text domain for translation.
 		 */
-		public function load_plugin_textdomain() {
+		public function load_plugin_text_domain() {
 			load_plugin_textdomain( 'gfirem-ffp-m2-account-locale', false, basename( dirname( __FILE__ ) ) . '/languages' );
 		}
 
