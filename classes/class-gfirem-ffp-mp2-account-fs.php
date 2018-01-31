@@ -53,6 +53,7 @@ class GFireMFfpMp2AccountFs {
 					'type'                => 'plugin',
 					'public_key'          => 'pk_87d164b71497930a10e47eb0ac05f',
 					'is_premium'          => true,
+					'has_premium_version' => true,
 					'is_premium_only'     => true,
 					'has_addons'          => false,
 					'has_paid_plans'      => true,
@@ -62,8 +63,9 @@ class GFireMFfpMp2AccountFs {
 						'is_require_payment' => true,
 					),
 					'menu'                => array(
-						'first-path'     => 'plugins.php',
-						'support'        => false,
+						'slug'       => 'gfirem_ffp_mp2_account',
+						'first-path' => 'admin.php?page=gfirem_ffp_mp2_account',
+						'support'    => false,
 					),
 					// Set the SDK to work in a sandbox mode (for development & testing).
 					// IMPORTANT: MAKE SURE TO REMOVE SECRET KEY BEFORE DEPLOYMENT.
