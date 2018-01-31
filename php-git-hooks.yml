@@ -38,14 +38,14 @@ pre-push:
     enabled: true
     execute:
       phpunit:
-        enabled:     true
+        enabled:     false
         random-mode: true
         options:     null
     strict-coverage:
-        enabled:       true
+        enabled:       false
         minimum:       90
     guard-coverage:
-        enabled: true
+        enabled: false
         message: 'WARNING!!, your code coverage is lower.'
     message:
       right-message: 'PUSH IT!!'
