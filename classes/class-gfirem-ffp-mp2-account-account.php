@@ -21,7 +21,7 @@ if ( ! defined( 'WPINC' ) ) {
 class GFireMFfpMp2AccountAccount {
 	public function __construct() {
 		$this->settings = get_option( GFireMFfpMp2AccountManager::get_slug() );
-		$hook           = 'ms_view_account_profile_top';
+		$hook           = 'ms_view_account_profile_bottom';
 
 		if ( empty( $this->settings['form'] ) ) {
 			return;
@@ -29,7 +29,7 @@ class GFireMFfpMp2AccountAccount {
 
 		if ( ! empty( $this->settings['position'] ) ) {
 			if ( $this->settings['position'] === 'after_profile' ) {
-				$hook = 'ms_view_account_profile_bottom';
+				$hook = 'ms_view_account_memberships_bottom';
 			}
 		}
 		$this->options = array(
@@ -43,6 +43,12 @@ class GFireMFfpMp2AccountAccount {
 		foreach ( $this->options as $key => $option ) {
 			$attr[ $key ] = $option;
 		}
+		?>
+        </div>
+        <div id="account-profile">
+        <h2><?php echo get_ms_ac_profile_title(); ?></h2>
+		<?php
 		echo FrmFormsController::get_form_shortcode( apply_filters( 'gfirem_ffp_mp2_account_frm_args', $attr ) );
+		?><?php
 	}
 }
