@@ -46,7 +46,15 @@ class GFireMFfpMp2AccountAccount {
 		?>
         </div>
         <div id="account-profile">
-        <h2><?php echo get_ms_ac_profile_title(); ?></h2>
+        <h2>
+			<?php
+			echo get_ms_ac_profile_title();
+
+			if ( is_ms_ac_show_profile_change() ) {
+				echo get_ms_ac_profile_change_link();
+			}
+			?>
+        </h2>
 		<?php
 		echo FrmFormsController::get_form_shortcode( apply_filters( 'gfirem_ffp_mp2_account_frm_args', $attr ) );
 		?><?php
